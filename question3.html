@@ -16,12 +16,30 @@
       // 1
       /* قم بإنشاء مصفوفتين
         اللي إنت اتابعها Animeتحتوي على مسلسلات ال myAnime المصفوفة الأولى
+         
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
-
+        
+       let myAnime =['ONE PIECE','DETECTIVE CONAN','NAROTO']
+       let myFriendAnime =['ONE PIECE','DETH NOTE','INUYASHA']
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
-
+         let mutualAnime =[]
+         for (let index = 0; index < myAnime.length; index++) {
+           const me = myAnime[index];
+          for (let i = 0; i < myFriendAnime.length; i++) {
+            const myfriend = myFriendAnime[i];
+            
+          }
+          if (me==myfriend) {
+            mutualAnime.push(me) 
+            
+          }
+            
+           
+         }
+         console.log(mutualAnime)
+         
       // mutualAnimeقارن المصفوفتين وضيف المسلسلات المشتركة ل
 
       // consoleفي ال mutualAnime اطبع
@@ -42,6 +60,12 @@
         });
       }
       createList(mutualAnime);
+
+
+
+      
     </script>
   </body>
 </html>
+
+
